@@ -29,10 +29,10 @@
 }
 
 /* *header bildÜberschrift, 2xmain Seiten überschrift, footer Seiten überschrift */
-.fontSizeSeitenÜberschrift{
+.fontSizeSeitenÜberschrift {
     font-size: 10rem;
     width: 10vw;
-    }
+}
 
 
 
@@ -61,39 +61,52 @@ header section {
     font-size: 10rem;
     text-align: left;
     margin: 0 10vw;
-    text-decoration: underline 0.5rem;    /* ? wie macht man Strich der nach rechts vesezt ist */
+    text-decoration: underline 0.5rem;
+    /* ? wie macht man Strich der nach rechts vesezt ist */
     text-underline-offset: 2rem;
 }
 
-header img{           /* ? wieso geht es nicht mit class .bildHeader anzusprechen? */
+header img {
+    /* ? wieso geht es nicht mit class .bildHeader anzusprechen? */
     display: block;
     background-color: red;
     margin: 3rem auto 0;
 }
 
-header article{
+header article {
     display: flex;
-    width:26vw;             /* ? wie richte ich das Bild mittig in der Seite aus ? */
+    width: 26vw;
+    /* ? wie richte ich das Bild mittig in der Seite aus ? */
     margin: 0 auto;
     flex-wrap: wrap;
 }
-.bildHeaderUntertitel{
-    margin-top:  1rem;
+
+.bildHeaderUntertitel {
+    margin-top: 1rem;
 }
 
-.bildHeaderUntertitel span{
+.bildHeaderUntertitel span {
     font-size: 1.5rem;
 }
 
 /* ********************* section mit Tabelle ********************* */
 
-.colorSectionMitTabelle p:nth-of-type(1){
-padding-top: 3rem;
-padding-left: 4rem;
+
+
+.abstandDerUngeradenSeitenNummerierung{
+    padding-top: 3rem;
+    padding-left: 4rem;
 }
 
-.colorSectionMitTabelle>p:nth-of-type(3){
-    background-color: yellow;
+.abstandDerGeradenSeitenNummerierung{
+    padding-top: 3rem;
+    padding-right: 4rem;
+    text-align: right;
+}
+
+
+
+.colorSectionMitTabelle>p:nth-of-type(3) {
     text-align: right;
     padding-right: 5rem;
     margin-left: 50vw;
@@ -101,20 +114,19 @@ padding-left: 4rem;
 }
 
 
-.colorSectionMitTabelle>p:nth-of-type(4){
-    background-color: green;
+.colorSectionMitTabelle>p:nth-of-type(4) {
     text-align: right;
     padding-right: 5rem;
     margin-top: 2rem;
-        
+
 }
 
 /* ********************** section articel mit Tabelle ****************** */
 
-.colorSectionMitTabelle article{
+.colorSectionMitTabelle article {
     background-color: red;
     display: flex;
-    margin-left: 40vw;
+    margin-left: 42.5vw;
     flex-wrap: wrap;
     row-gap: 1rem;
     column-gap: 2rem;
@@ -122,14 +134,75 @@ padding-left: 4rem;
 
 }
 
-.colorSectionMitTabelle article>p{ 
+.colorSectionMitTabelle article>p {
     color: blue;
     background-color: yellow;
     width: 12rem;
-    height: 6rem; 
+    sheight: 6rem;
+    margin-top: 1rem;
+    align-items: baseline;
 }
 
-.colorSectionMitTabelle article>p:nth-of-type(3n + 1){
-    font-size: 4rem;
+
+
+/* *spricht jedes 3te an, also Linke Spalete der Tabelle */
+.colorSectionMitTabelle article>p:nth-of-type(3n + 1) {
+    text-align: right;
+    text-
+}
+
+.colorSectionMitTabelle article>p:nth-of-type(3n + 2) {
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.colorSectionMitTabelle article>p:nth-of-type(3n + 3) {
+    text-align: right;
+    padding-left: 5.2rem;
+    word-wrap: inherit;
+}
+
+
+
+/* ************************ logo *********************** */
+
+.logoWork{
+    width: 10rem;
+    margin-top: 10rem;
+    margin-left: 80vw;
+    margin-bottom: 10rem;
+}
+
+/* *************************  secton mit Bildern ******************* */
+
+.textÜberBildern{
+    margin-left: 4rem;
+    width: 40vw;
+    line-height: 2rem;
+}
+
+
+
+
+/* **************************** erstes Bild ************************ */
+
+.erstesBildArticel{
+    margin: 5rem 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin
+}
+
+.erstesBildArticel p{
+    font-size: 5rem;
+    margin-right: -2rem;
+    z-index: 2;     /* * macht überlagerung */
+    order: 0;       /* * text kommt zuerst */
+}
+
+.erstesBildArticel img{
+    z-index: 1;
+    width: 48vw;
+    order: 1;
 }
 
