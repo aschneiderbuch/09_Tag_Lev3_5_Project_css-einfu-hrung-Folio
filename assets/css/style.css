@@ -202,9 +202,10 @@ width: 24.5rem;}
 /* **************************** erstes Bild ************************ */
 
 .ungeradeBildArticel{
-    margin: 6rem 5rem 0;
+    margin: 6rem 5rem 6rem;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 6rem;
 }
 
 .ungeradeBildArticel p{
@@ -223,7 +224,7 @@ width: 24.5rem;}
 /* ********************************** gerade Bilder ************************ */
 
 .geradeBildArticel{
-    margin: 6rem 5rem 0;
+    margin: 6rem 5rem 0rem;
     display: flex;
     justify-content: space-between;
 padding-bottom: 6rem;
