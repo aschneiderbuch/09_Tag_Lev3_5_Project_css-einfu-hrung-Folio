@@ -173,7 +173,22 @@ header article {
     margin-bottom: 10rem;
 }
 
+
+
+
 /* *************************  secton mit Bildern ******************* */
+
+/* .textRechtsAusgerichtet{
+    sbackground-color: yellow;
+   s text-align: right;
+smargin-left: 70vw;} */
+
+
+#wortRechtsAusrichten{
+text-align: right;
+margin-left: 68vw;
+width: 24.5rem;}
+
 
 .textÜberBildern{
     margin-left: 4rem;
@@ -186,23 +201,44 @@ header article {
 
 /* **************************** erstes Bild ************************ */
 
-.erstesBildArticel{
-    margin: 5rem 5rem 0;
+.ungeradeBildArticel{
+    margin: 6rem 5rem 0;
     display: flex;
     justify-content: space-between;
-    margin
 }
 
-.erstesBildArticel p{
+.ungeradeBildArticel p{
     font-size: 5rem;
     margin-right: -2rem;
     z-index: 2;     /* * macht überlagerung */
     order: 0;       /* * text kommt zuerst */
 }
 
-.erstesBildArticel img{
+.ungeradeBildArticel img{
     z-index: 1;
     width: 48vw;
     order: 1;
 }
 
+/* ********************************** gerade Bilder ************************ */
+
+.geradeBildArticel{
+    margin: 6rem 5rem 0;
+    display: flex;
+    justify-content: space-between;
+padding-bottom: 6rem;
+}
+
+.geradeBildArticel p{
+    font-size: 5rem;
+    margin-left: -2rem;
+    z-index: 2;     /* * macht überlagerung */
+    order: 1;       /* * text kommt zuerst */
+    text-align: right;
+}
+
+.geradeBildArticel img{
+    z-index: 1;
+    width: 48vw;
+    order: 0;
+}
