@@ -28,6 +28,15 @@
     background-color: #d2d2d2;
 }
 
+/* *header bildÜberschrift, 2xmain Seiten überschrift, footer Seiten überschrift */
+.fontSizeSeitenÜberschrift{
+    font-size: 10rem;
+    width: 10vw;
+    }
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -63,14 +72,26 @@ header img{           /* ? wieso geht es nicht mit class .bildHeader anzuspreche
 }
 
 header article{
-    background-color: yellow;
     display: flex;
-    width:26vw;
+    width:26vw;             /* ? wie richte ich das Bild mittig in der Seite aus ? */
     margin: 0 auto;
     flex-wrap: wrap;
 }
 .bildHeaderUntertitel{
-    background-color: green;
-
     margin-top:  1rem;
+}
+
+.bildHeaderUntertitel span{
+    font-size: 1.5rem;
+}
+
+/* ********************* section mit Tabelle ********************* */
+
+.colorSectionMitTabelle p:nth-of-type(1){
+padding-top: 3rem;
+padding-left: 4rem;
+}
+
+.colorSectionMitTabelle p:nth-of-type(3){
+    background-color: red;
 }
