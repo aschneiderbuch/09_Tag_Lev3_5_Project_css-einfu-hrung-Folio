@@ -1,6 +1,3 @@
-
-
-
 /* *font-faces
 
 
@@ -11,27 +8,27 @@
 /* ******************** classen ******************** */
 
 /* * header */
-.colorHeader{
+.colorHeader {
     color: #042a5a;
-    background-color: #efe8d7 ;
+    background-color: #efe8d7;
 }
 
-.colorSectionMitTabelle{
+.colorSectionMitTabelle {
     color: #282B29;
     background-color: #f4c4c4;
 }
 
-.colorSectionMitBildern{
+.colorSectionMitBildern {
     color: #7d2227;
     background-color: #deb873;
 }
 
-.colorFooter{
+.colorFooter {
     color: #388833;
     background-color: #d2d2d2;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,26 +36,41 @@
 
 html {
     font-size: 16px;
-    width: 1260px ;     /* *Seite auf Mac Book breite angepasst */
+    width: 1260px;
+    /* *Seite auf Mac Book breite angepasst */
     scroll-behavior: smooth;
 }
 
-header section{
+header section {
     display: flex;
     justify-content: space-between;
     padding: 1rem 8rem;
     border-bottom: 0.02rem solid grey;
 }
 
-.bildÜberschrift{
+.bildÜberschrift {
     font-size: 10rem;
     text-align: left;
-margin: 0 10vw;
-text-decoration: underline 0.5rem ;       /* ? wie macht man Strich der nach rechts vesezt ist */
-text-underline-offset: 2rem;    
-            
+    margin: 0 10vw;
+    text-decoration: underline 0.5rem;    /* ? wie macht man Strich der nach rechts vesezt ist */
+    text-underline-offset: 2rem;
 }
 
+header img{           /* ? wieso geht es nicht mit class .bildHeader anzusprechen? */
+    display: block;
+    background-color: red;
+    margin: 3rem auto 0;
+}
 
+header article{
+    background-color: yellow;
+    display: flex;
+    width:26vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.bildHeaderUntertitel{
+    background-color: green;
 
-
+    margin-top:  1rem;
+}
