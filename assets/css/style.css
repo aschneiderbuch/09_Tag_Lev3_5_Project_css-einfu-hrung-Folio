@@ -61,10 +61,12 @@ header section {
     font-size: 10rem;
     text-align: left;
     margin: 0 10vw;
-    text-decoration: underline 0.5rem;
+    width: 80vw;
+    text-decoration: underline 0.05rem;
     /* ? wie macht man Strich der nach rechts vesezt ist */
     text-underline-offset: 2rem;
 }
+
 
 header img {
     /* ? wieso geht es nicht mit class .bildHeader anzusprechen? */
@@ -124,7 +126,6 @@ header article {
 /* ********************** section articel mit Tabelle ****************** */
 
 .colorSectionMitTabelle article {
-    background-color: red;
     display: flex;
     margin-left: 42.5vw;
     flex-wrap: wrap;
@@ -135,25 +136,25 @@ header article {
 }
 
 .colorSectionMitTabelle article>p {
-    color: blue;
-    background-color: yellow;
     width: 12rem;
     sheight: 6rem;
     margin-top: 1rem;
-    align-items: baseline;
+    align-items: stretch;
 }
-
 
 
 /* *spricht jedes 3te an, also Linke Spalete der Tabelle */
 .colorSectionMitTabelle article>p:nth-of-type(3n + 1) {
-    text-align: right;
-    text-
+    text-align: center;
+    align-self: center;
+    width: 8rem;
 }
 
 .colorSectionMitTabelle article>p:nth-of-type(3n + 2) {
     text-align: left;
     font-size: 1.4rem;
+    align-self: center;
+    flex-grow: 0.42;
 }
 
 .colorSectionMitTabelle article>p:nth-of-type(3n + 3) {
@@ -259,3 +260,13 @@ footer>p:nth-of-type(3) {
 margin: 5rem auto 10rem;
 }
 
+footer nav{
+    width: 4rem;
+    text-align: right;
+margin-left: 88vw;
+}
+footer nav a{
+    text-decoration: none;
+    width: 10rem;
+    color: #388883
+}
