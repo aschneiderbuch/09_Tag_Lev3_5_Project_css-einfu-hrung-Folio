@@ -93,12 +93,12 @@ header article {
 
 
 
-.abstandDerUngeradenSeitenNummerierung{
+.abstandDerUngeradenSeitenNummerierung {
     padding-top: 3rem;
     padding-left: 4rem;
 }
 
-.abstandDerGeradenSeitenNummerierung{
+.abstandDerGeradenSeitenNummerierung {
     padding-top: 3rem;
     padding-right: 4rem;
     text-align: right;
@@ -166,7 +166,7 @@ header article {
 
 /* ************************ logo *********************** */
 
-.logoWork{
+.logoWork {
     width: 10rem;
     margin-top: 10rem;
     margin-left: 80vw;
@@ -184,13 +184,14 @@ header article {
 smargin-left: 70vw;} */
 
 
-#wortRechtsAusrichten{
-text-align: right;
-margin-left: 68vw;
-width: 24.5rem;}
+#wortRechtsAusrichten {
+    text-align: right;
+    margin-left: 68vw;
+    width: 24.5rem;
+}
 
 
-.textÜberBildern{
+.textÜberBildern {
     margin-left: 4rem;
     width: 40vw;
     line-height: 2rem;
@@ -201,21 +202,23 @@ width: 24.5rem;}
 
 /* **************************** erstes Bild ************************ */
 
-.ungeradeBildArticel{
+.ungeradeBildArticel {
     margin: 6rem 5rem 6rem;
     display: flex;
     justify-content: space-between;
     padding-bottom: 6rem;
 }
 
-.ungeradeBildArticel p{
+.ungeradeBildArticel p {
     font-size: 5rem;
     margin-right: -2rem;
-    z-index: 2;     /* * macht überlagerung */
-    order: 0;       /* * text kommt zuerst */
+    z-index: 2;
+    /* * macht überlagerung */
+    order: 0;
+    /* * text kommt zuerst */
 }
 
-.ungeradeBildArticel img{
+.ungeradeBildArticel img {
     z-index: 1;
     width: 48vw;
     order: 1;
@@ -223,26 +226,36 @@ width: 24.5rem;}
 
 /* ********************************** gerade Bilder ************************ */
 
-.geradeBildArticel{
+.geradeBildArticel {
     margin: 6rem 5rem 0rem;
     display: flex;
     justify-content: space-between;
-padding-bottom: 6rem;
+    padding-bottom: 6rem;
 }
 
-.geradeBildArticel p{
+.geradeBildArticel p {
     font-size: 5rem;
     margin-left: -2rem;
-    z-index: 2;     /* * macht überlagerung */
-    order: 1;       /* * text kommt zuerst */
+    z-index: 2;
+    /* * macht überlagerung */
+    order: 1;
+    /* * text kommt zuerst */
     text-align: right;
 }
 
-.geradeBildArticel img{
+.geradeBildArticel img {
     z-index: 1;
     width: 48vw;
     order: 0;
 }
 
 /* ********************************* footer ************************** */
+
+
+footer>p:nth-of-type(3) {
+    text-align: left;
+    width: 23vw;
+    line-height: 2rem;
+margin: 5rem auto 10rem;
+}
 
