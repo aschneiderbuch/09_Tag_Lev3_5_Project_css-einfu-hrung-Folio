@@ -125,53 +125,50 @@ header article {
 
 /* ********************** section articel mit Tabelle ****************** */
 
-.colorSectionMitTabelle article {
-    display: flex;
-    margin-left: 42.5vw;
-    flex-wrap: wrap;
-    row-gap: 1rem;
-    column-gap: 2rem;
-    ;
-
+.grid__Tabelle__3Spalten3Zeilen{
+    width: 50vw;
+    margin-left: 45vw;
+    display: grid;
+    grid-template-columns: 5vw 10vw 35vw;
 }
 
-.colorSectionMitTabelle article>p {
-    width: 12rem;
-    sheight: 6rem;
-    margin-top: 1rem;
-    align-items: stretch;
-}
-
-
-/* *spricht jedes 3te an, also Linke Spalete der Tabelle */
-.colorSectionMitTabelle article>p:nth-of-type(3n + 1) {
-    text-align: center;
-    align-self: center;
-    width: 8rem;
-}
-
-.colorSectionMitTabelle article>p:nth-of-type(3n + 2) {
-    text-align: left;
-    font-size: 1.4rem;
-    align-self: center;
-    flex-grow: 0.42;
-}
-
-.colorSectionMitTabelle article>p:nth-of-type(3n + 3) {
+.grid__letzteSpalte--style{
+    padding-top: 2vh;
+    height: 15vh;
+    padding-left: 27vw;
     text-align: right;
-    padding-left: 5.2rem;
-    word-wrap: inherit;
+    border-top: 2px solid #8E7776;
+}
+
+.zeileUnten{
+    border-bottom: 2px solid #8E7776;
+}
+.grid__letzteSpalte--style{
+    padding-top: 2vh;
+    height: 15vh;
+    padding-left: 26.5vw;
+    text-align: right;
+    border-top: 2px solid #8E7776;
+}
+
+.grid__ersteUndZweiteSpalte--style{
+    border-top: 2px solid #8E7776;
+    padding-top: 6vh;
 }
 
 
 
 /* ************************ logo *********************** */
 
-.logoWork {
-    width: 10rem;
-    margin-top: 10rem;
+
+
+
+
+.articel__imgLogoWork--style>img{
+    width: 10vw;
     margin-left: 80vw;
-    margin-bottom: 10rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 
@@ -257,16 +254,18 @@ footer>p:nth-of-type(3) {
     text-align: left;
     width: 23vw;
     line-height: 2rem;
-margin: 5rem auto 10rem;
+    margin: 5rem auto 10rem;
 }
 
-footer nav{
+footer nav {
     width: 4rem;
     text-align: right;
-margin-left: 88vw;
+    margin-left: 88vw;
 }
-footer nav a{
+
+footer nav a {
     text-decoration: none;
     width: 10rem;
     color: #388883
 }
+
