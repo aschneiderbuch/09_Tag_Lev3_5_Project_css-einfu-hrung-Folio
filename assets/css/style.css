@@ -62,13 +62,34 @@ header section {
     font-size: 10rem;
     text-align: center;
     margin: 0 10vw;
-    width: 80vw;
-    stext-decoration: underline 0.05rem;
-    /* ? wie macht man Strich der nach rechts vesezt ist */
-    stext-underline-offset: 2rem;
-    border-bottom: 2px solid #282B29;
+    width: 85vw;
+/*    stext-decoration: underline 0.05rem;
+ */    /* ? wie macht man Strich der nach rechts vesezt ist */
+/*     text-underline-offset: 2rem;
+ */    border-bottom: 2px solid #042a5a;
 }
 
+.bildÜberschrift>span:nth-of-type(1){
+    background-color: green;
+    display:inline-block ;
+    width: 85vw;
+      border-bottom: 2px solid #042a5a;
+}
+
+.bildÜberschrift>span:nth-of-type(3){
+    background-color: yellow;
+    padding-left: vw;
+    border-bottom: 2px solid #042a5a;
+}
+
+.bildÜberschrift>span:nth-of-type(2){
+    background-color: #042a5a;
+    display: inline-block;
+    height: 2px;
+    width: 10vw;
+    color: #042a5a;
+    margin-bottom: 7vh;
+}
 
 header img {
     /* ? wieso geht es nicht mit class .bildHeader anzusprechen? */
