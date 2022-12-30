@@ -58,7 +58,6 @@ header section {
 }
 
 .bildÜberschrift {
-    background-color: red;
     font-size: 10rem;
     text-align: center;
     margin: 0 10vw;
@@ -70,14 +69,12 @@ header section {
 }
 
 .bildÜberschrift>span:nth-of-type(1){
-    background-color: green;
     display:inline-block ;
     width: 85vw;
       border-bottom: 2px solid #042a5a;
 }
 
 .bildÜberschrift>span:nth-of-type(3){
-    background-color: yellow;
     padding-left: vw;
     border-bottom: 2px solid #042a5a;
 }
@@ -87,7 +84,6 @@ header section {
     display: inline-block;
     height: 2px;
     width: 10vw;
-    color: #042a5a;
     margin-bottom: 7vh;
 }
 
